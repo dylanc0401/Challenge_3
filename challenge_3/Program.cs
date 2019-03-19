@@ -8,10 +8,6 @@ namespace challenge_3
 {
     class Program
     {
-
-
-
-
         class PuzzleEquation
         {
             private string version;
@@ -19,7 +15,6 @@ namespace challenge_3
             private int num2;
             public string Tostring()
             {
-
 
             }
             public PuzzleEquation()
@@ -32,7 +27,6 @@ namespace challenge_3
             public string About()
             {
                 return (version);
-
             }
         }
         static void Main(string[] args)
@@ -54,9 +48,7 @@ namespace challenge_3
                 Console.Read();
                 return;
             }
-
             input = Console.ReadLine().ToLower();
-
             if (input== "start")
             {
                 for (int i = 0; i < 9; i++)
@@ -83,7 +75,6 @@ namespace challenge_3
                         Console.WriteLine("incorrect or took too long!");
                     }
                 }
-                
             }
             else
             {
