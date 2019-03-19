@@ -38,6 +38,7 @@ namespace challenge_3
                 return (version);
             }
         }
+
         static void Main(string[] args)
         {
             PuzzleEquation puzzleEquation = new PuzzleEquation();
