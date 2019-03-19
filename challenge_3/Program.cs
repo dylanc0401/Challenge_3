@@ -12,6 +12,8 @@ namespace challenge_3
         class PuzzleEquation
         {
             private string version ;
+            private int num1;
+            private int num2;
 
             public PuzzleEquation()
             {
@@ -29,7 +31,6 @@ namespace challenge_3
         static void Main(string[] args)
         {
             PuzzleEquation puzzleEquation = new PuzzleEquation();
-
             Console.WriteLine(puzzleEquation.About());
 
             Console.WriteLine("Would you like to start the quiz");
