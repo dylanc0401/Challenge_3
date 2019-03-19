@@ -13,7 +13,7 @@ namespace challenge_3
         {
             public void About()
             {
-                return (string);
+                return ("1.1");
 
             }
         }
