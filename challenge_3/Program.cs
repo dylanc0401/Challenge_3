@@ -17,14 +17,11 @@ namespace challenge_3
             private string version;
             private int num1;
             private int num2;
-            public string Tostring();
+            public string Tostring()
             {
 
 
             }
-
-            
-
             public PuzzleEquation()
             {
                 Random ran = new Random();
@@ -32,15 +29,12 @@ namespace challenge_3
                 num2 = ran.Next(0, 9);
                 version = "1.2";
             }
-
-
             public string About()
             {
                 return (version);
 
             }
         }
-
         static void Main(string[] args)
         {
             PuzzleEquation puzzleEquation = new PuzzleEquation();
