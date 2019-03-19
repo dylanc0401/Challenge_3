@@ -13,7 +13,7 @@ namespace challenge_3
             private string version;
             private int num1;
             private int num2;
-            public string Tostring()
+            public string ToString()
             {
 
             }
