@@ -11,9 +11,9 @@ namespace challenge_3
 
         class PuzzleEquation
         {
-            public void About()
+            public string About()
             {
-                return (string);
+                return "1.1";
 
             }
         }
