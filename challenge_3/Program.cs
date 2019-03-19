@@ -13,6 +13,9 @@ namespace challenge_3
             private string version;
             private int num1;
             private int num2;
+            private int answer;
+            private int timeOut;
+            private DateTime started = new DateTime();
 
             public override string ToString()
             {
@@ -24,6 +27,9 @@ namespace challenge_3
                 Random ran = new Random();
                 num1 = ran.Next(0, 9);
                 num2 = ran.Next(0, 9);
+                answer = num1 + num2;
+                started = DateTime.Now;
+                timeOut = 10;
                 version = "1.2";
             }
 
