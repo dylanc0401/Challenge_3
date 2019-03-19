@@ -33,6 +33,11 @@ namespace challenge_3
                 version = "1.2";
             }
 
+            public string checkAnswer()
+            {
+                return (checkAnswer());
+            }
+
             public string About()
             {
                 return (version);
