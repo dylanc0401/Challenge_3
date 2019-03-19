@@ -13,11 +13,12 @@ namespace challenge_3
             private string version;
             private int num1;
             private int num2;
+
             public override string ToString()
             {
                 return ($"{num1} + {num2} = ?");
-
             }
+
             public PuzzleEquation()
             {
                 Random ran = new Random();
@@ -25,6 +26,7 @@ namespace challenge_3
                 num2 = ran.Next(0, 9);
                 version = "1.2";
             }
+
             public string About()
             {
                 return (version);
