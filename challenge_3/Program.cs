@@ -20,8 +20,9 @@ namespace challenge_3
 
         static void Main(string[] args)
         {
-            
-            
+            PuzzleEquation puzzleEquation = new PuzzleEquation();
+
+            Console.WriteLine(puzzleEquation.About());
 
             Console.WriteLine("Would you like to start the quiz");
             int cor = 0;
