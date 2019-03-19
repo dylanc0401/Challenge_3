@@ -11,7 +11,11 @@ namespace challenge_3
 
         class PuzzleEquation
         {
+            public void About()
+            {
+                return (string);
 
+            }
         }
 
         static void Main(string[] args)
