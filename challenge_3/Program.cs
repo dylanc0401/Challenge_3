@@ -9,11 +9,20 @@ namespace challenge_3
     class Program
     {
 
+
+
+
         class PuzzleEquation
         {
-            private string version ;
+            private string version;
             private int num1;
             private int num2;
+            public string Tostring();
+            {
+
+
+            }
+
             
 
             public PuzzleEquation()
@@ -36,7 +45,7 @@ namespace challenge_3
         {
             PuzzleEquation puzzleEquation = new PuzzleEquation();
             Console.WriteLine(puzzleEquation.About());
-
+            Console.WriteLine(puzzleEquation.ToString());
             Console.WriteLine("Would you like to start the quiz");
             int cor = 0;
             string input = Console.ReadLine().ToLower();
