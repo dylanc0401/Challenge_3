@@ -8,9 +8,15 @@ namespace challenge_3
 {
     class Program
     {
-        static void Main(string[] args)
+
+        class PuzzleEquation
         {
 
+        }
+
+        static void Main(string[] args)
+        {
+            
             
 
             Console.WriteLine("Would you like to start the quiz");
