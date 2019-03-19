@@ -11,6 +11,8 @@ namespace challenge_3
 
         class PuzzleEquation
         {
+            private string version;
+
             public string About()
             {
                 return ("1.1");
