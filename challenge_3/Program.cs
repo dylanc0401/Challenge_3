@@ -11,11 +11,11 @@ namespace challenge_3
 
         class PuzzleEquation
         {
-            private string Version ;
+            private string version ;
 
             public PuzzleEquation()
             {
-                Version = "1.2";
+                version = "1.2";
             }
 
 
