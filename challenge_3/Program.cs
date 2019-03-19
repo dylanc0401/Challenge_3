@@ -35,7 +35,7 @@ namespace challenge_3
 
             public string checkAnswer()
             {
-                return (checkAnswer());
+                return ("checkAnswer");
             }
 
             public string About()
@@ -48,7 +48,7 @@ namespace challenge_3
         {
             PuzzleEquation puzzleEquation = new PuzzleEquation();
             Console.WriteLine(puzzleEquation.About());
-            Console.WriteLine(puzzleEquation.ToString());
+            Console.WriteLine(puzzleEquation.checkAnswer());
             Console.WriteLine("Would you like to start the quiz");
             int cor = 0;
             string input = Console.ReadLine().ToLower();
