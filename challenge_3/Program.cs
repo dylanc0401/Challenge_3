@@ -14,9 +14,13 @@ namespace challenge_3
             private string version ;
             private int num1;
             private int num2;
+            
 
             public PuzzleEquation()
             {
+                Random ran = new Random();
+                num1 = ran.Next(0, 9);
+                num2 = ran.Next(0, 9);
                 version = "1.2";
             }
 
