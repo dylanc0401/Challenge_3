@@ -47,5 +47,12 @@ namespace challenge_3
         {
             return (version);
         }
+
+        public void setPuzzle(int _num1,int _num2 )
+        {
+            num1 = _num1;
+            num2 = _num2;
+            answer = _num2 + _num1;
+        }
     }
 }

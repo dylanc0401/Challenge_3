@@ -8,10 +8,27 @@ namespace testing_challenge3
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestFailAnswer()
         {
             PuzzleEquation puzzleEquation = new PuzzleEquation();
-            string s = puzzleEquation.checkAnswer(-1);
+            string s = puzzleEquation.checkAnswer("-1");
+            Assert.AreEqual(s, "Invalid number(must be a number)");
+        }
+
+        [TestMethod]
+        public void TestCorrectAnswer()
+        {
+            PuzzleEquation puzzleEquation = new PuzzleEquation();
+            puzzleEquation.setPuzzle(3, 3);
+            string s = puzzleEquation.checkAnswer("6");
+            Assert.AreEqual(s, "correct");
+        }
+
+        [TestMethod]
+        public void TestInvalidAnswer()
+        {
+            PuzzleEquation puzzleEquation = new PuzzleEquation();
+            string s = puzzleEquation.checkAnswer("abc");
             Assert.AreEqual(s, "Invalid number(must be a number)");
         }
     }
