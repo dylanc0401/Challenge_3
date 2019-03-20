@@ -33,9 +33,16 @@ namespace challenge_3
                 version = "1.2";
             }
 
-            public string checkAnswer()
+            public string checkAnswer(int input)
             {
-                return ("checkAnswer");
+                if (answer == input)
+                {
+                    return ("correct");
+                }
+                else
+                {
+                    return ("Invalid number(must be a number");
+                }
             }
 
             public string About()
@@ -48,7 +55,7 @@ namespace challenge_3
         {
             PuzzleEquation puzzleEquation = new PuzzleEquation();
             Console.WriteLine(puzzleEquation.About());
-            Console.WriteLine(puzzleEquation.checkAnswer());
+            Console.WriteLine(puzzleEquation.checkAnswer(int.Parse(Console.ReadLine())));
             Console.WriteLine("Would you like to start the quiz");
             int cor = 0;
             string input = Console.ReadLine().ToLower();
