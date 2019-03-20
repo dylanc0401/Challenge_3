@@ -8,54 +8,13 @@ namespace challenge_3
 {
     class Program
     {
-        class PuzzleEquation
-        {
-            private string version;
-            private int num1;
-            private int num2;
-            private int answer;
-            private int timeOut;
-            private DateTime started = new DateTime();
-
-            public override string ToString()
-            {
-                return ($"{num1} + {num2} = ?");
-            }
-
-            public PuzzleEquation()
-            {
-                Random ran = new Random();
-                num1 = ran.Next(0, 9);
-                num2 = ran.Next(0, 9);
-                answer = num1 + num2;
-                started = DateTime.Now;
-                timeOut = 10;
-                version = "1.2";
-            }
-
-            public string checkAnswer(int input)
-            {
-                if (answer == input)
-                {
-                    return ("correct");
-                }
-                else
-                {
-                    return ("Invalid number(must be a number");
-                }
-            }
-
-            public string About()
-            {
-                return (version);
-            }
-        }
+       
 
         static void Main(string[] args)
         {
             PuzzleEquation puzzleEquation = new PuzzleEquation();
             Console.WriteLine(puzzleEquation.About());
-            Console.WriteLine(puzzleEquation.checkAnswer(int.Parse(Console.ReadLine())));
+            Console.WriteLine(puzzleEquation.checkAnswer(Console.ReadLine()));
             Console.WriteLine("Would you like to start the quiz");
             int cor = 0;
             string input = Console.ReadLine().ToLower();
